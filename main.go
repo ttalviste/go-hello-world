@@ -50,4 +50,6 @@ func main() {
 	firstName_2 = "Tormis"
 	fmt.Println(ptr, *ptr)
 
+	fmt.Println("Thank you for your attention, it's Go time now!")
+
 }
