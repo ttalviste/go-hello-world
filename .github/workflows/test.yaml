@@ -23,17 +23,15 @@ jobs:
     - name: Install dependencies
       run: |
         go version
-        go get -u golang.org/x/lint/golint
 
     # Run build of the application
     - name: Run build
       run: go build .
 
     # Run vet & lint on the code
-    - name: Run vet & lint
+    - name: Run vet
       run: |
         go vet .
-        golint .
   test:
     strategy:
       matrix:
