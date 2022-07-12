@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	apiClient "github.com/ttalviste/go-hello-world/rest-api-client"
+)
 
 func main() {
+	apiClient.FetchSandboxTokens()
+
 	fmt.Println("Hello world!")
 
 	fmt.Println("Let's work with primitive types:")
